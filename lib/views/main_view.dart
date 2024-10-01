@@ -1,5 +1,5 @@
-import 'package:case_study/core/views/home/home_view.dart';
-import 'package:case_study/core/views/score/score_view.dart';
+import 'package:case_study/views/home/home_view.dart';
+import 'package:case_study/views/score/score_view.dart';
 import 'package:flutter/material.dart';
 
 class MainView extends StatefulWidget {

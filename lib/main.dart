@@ -1,4 +1,4 @@
-import 'package:case_study/core/views/main_view.dart';
+import 'package:case_study/views/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 

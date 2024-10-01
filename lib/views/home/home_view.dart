@@ -1,6 +1,6 @@
 import 'package:case_study/core/components/mainButton.dart';
 import 'package:case_study/core/components/mainText.dart';
-import 'package:case_study/core/views/home/home_controller.dart';
+import 'package:case_study/views/home/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
