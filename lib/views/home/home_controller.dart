@@ -11,6 +11,7 @@ class HomeController extends GetxController {
   Rx<int> randomGameNumber = 0.obs;
   Rx<int> counter = 0.obs;
   final TextEditingController textController = TextEditingController();
+  Rx<bool> isGameStart = false.obs;
 
   @override
   void onInit() {
@@ -19,6 +20,7 @@ class HomeController extends GetxController {
   }
 
   void generateGame() {
+    isGameStart.value = true;
     counter.value = 0;
     Random random = Random();
     randomGameNumber.value = random.nextInt(100);
@@ -27,6 +29,9 @@ class HomeController extends GetxController {
   }
 
   void checkAnswer() {
+    if(isGameStart.value == false) {
+      return;
+    }
     int? answer = int.tryParse(textController.text);
     if (answer == null) {
       Get.snackbar('Error', 'Geçerli bir sayı girin');
@@ -44,7 +49,7 @@ class HomeController extends GetxController {
 
   void win() async {
     _saveScore();
-
+    isGameStart.value = false;
     showDialog(
         context: Get.context!,
         builder: (ctx) => AlertDialog(

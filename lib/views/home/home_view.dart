@@ -32,8 +32,6 @@ class _HomeViewState extends State<HomeView> {
                   width: 120,
                   child: TextField(
                     controller: controller.textController,
-                    onTapOutside: (event) =>
-                        FocusManager.instance.primaryFocus?.unfocus(),
                     maxLength: 2,
                     textAlign: TextAlign.center,
                     keyboardType: TextInputType.number,
