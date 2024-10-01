@@ -1,6 +1,9 @@
 # case_study
 
-A new Flutter project.
+1-100 arası sayı tahmini yapabileceğiniz küçük bir oyun.
+Skor sayfasında tahmin sayılarınızı görebilirsiniz.
+
+Flutter version: 3.24.1
 
 ## Getting Started
 
